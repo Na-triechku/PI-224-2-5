@@ -1,0 +1,28 @@
+﻿@page "{handler?}"
+@model Jobs.WebClient.Pages.Views.JobApplication.JobApplicationModel
+@{
+    <form method="post">
+        <div>
+            <label>Your name</label><br/>
+            <input type="text" name="name"/>
+        </div>
+        <div>
+            <input type="hidden" name="vacancyId" value="@Model.VacancyId"/>
+        </div>
+        <div>
+            <label>Your experience</label><br/>
+            <input type="number" name="experience"/>
+        </div>
+        <div>
+            <label>Your skills, please enter them separated by commas without spaces.</label><br/>
+            <input type="text" name="skills"/>
+        </div>
+        <div>
+            <label>Expected salary</label><br/>
+            <input type="text" name="expectedSalary"/>
+        </div>
+        <div>
+            <br/><input class="btn btn-dark" type="submit" asp-page-handler="AddJobApplication" value="Add"/>
+        </div>
+    </form>
+}

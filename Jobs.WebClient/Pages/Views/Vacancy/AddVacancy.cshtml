@@ -1,0 +1,33 @@
+﻿@page "{handler?}"
+@model Jobs.WebClient.Pages.Views.Vacancy.AddVacancyModel
+@{
+    <form method="post">
+        <div>
+            <label>Vacancy name</label><br/>
+            <input type="text" name="name"/>
+        </div>
+        <div>
+            <label>Vacancy position</label><br/>
+            <input type="text" name="position"/>
+        </div>
+        <div>
+            <label>Vacancy required experience</label><br/>
+            <input type="number" name="requiredExperience"/>
+        </div>
+        <div>
+            <label>Vacancy required skills</label><br/>
+            <input type="text" name="requiredSkills"/>
+        </div>
+        <div>
+            <label>Vacancy start date</label><br/>
+            <input type="date" name="startDate"/>
+        </div>
+        <div>
+            <label>Vacancy salary</label><br/>
+            <input type="text" name="salary"/>
+        </div>
+        <div>
+            <br/><input class="btn btn-dark" type="submit" asp-page-handler="AddVacancy" value="Add" />
+        </div>
+    </form>
+}

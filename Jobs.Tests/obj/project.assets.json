@@ -1,0 +1,278 @@
+{
+  "version": 3,
+  "targets": {
+    "net6.0": {
+      "Jobs.BLL/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "AutoMapper": "11.0.1",
+          "Jobs.DAL": "1.0.0",
+          "Serilog": "2.11.0",
+          "Serilog.Sinks.Console": "4.0.1",
+          "Serilog.Sinks.File": "5.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Jobs.BLL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Jobs.BLL.dll": {}
+        }
+      },
+      "Jobs.DAL/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "6.0.5",
+          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.5",
+          "Microsoft.Extensions.Configuration": "6.0.1",
+          "Serilog": "2.11.0",
+          "Serilog.Sinks.Console": "4.0.1",
+          "Serilog.Sinks.File": "5.0.0",
+          "System.Configuration.ConfigurationManager": "6.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Jobs.DAL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Jobs.DAL.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      }
+    }
+  },
+  "libraries": {
+    "Jobs.BLL/1.0.0": {
+      "type": "project",
+      "path": "../Jobs.BLL/Jobs.BLL.csproj",
+      "msbuildProject": "../Jobs.BLL/Jobs.BLL.csproj"
+    },
+    "Jobs.DAL/1.0.0": {
+      "type": "project",
+      "path": "../Jobs.DAL/Jobs.DAL.csproj",
+      "msbuildProject": "../Jobs.DAL/Jobs.DAL.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net6.0": [
+      "Jobs.BLL >= 1.0.0",
+      "Microsoft.NET.Test.Sdk >= 17.2.0",
+      "Moq >= 4.18.1",
+      "coverlet.collector >= 3.1.2",
+      "xunit >= 2.4.1",
+      "xunit.runner.visualstudio >= 2.4.5"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Dice1\\.nuget\\packages\\": {},
+    "D:\\Visual studio\\instruments\\NuGetPackages": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\Dice1\\Downloads\\Telegram Desktop\\Jobs\\Jobs.Tests\\Jobs.Tests.csproj",
+      "projectName": "Jobs.Tests",
+      "projectPath": "C:\\Users\\Dice1\\Downloads\\Telegram Desktop\\Jobs\\Jobs.Tests\\Jobs.Tests.csproj",
+      "packagesPath": "C:\\Users\\Dice1\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Dice1\\Downloads\\Telegram Desktop\\Jobs\\Jobs.Tests\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "D:\\Visual studio\\instruments\\NuGetPackages"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\Dice1\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net6.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {}
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "projectReferences": {
+            "C:\\Users\\Dice1\\Downloads\\Telegram Desktop\\Jobs\\Jobs.BLL\\Jobs.BLL.csproj": {
+              "projectPath": "C:\\Users\\Dice1\\Downloads\\Telegram Desktop\\Jobs\\Jobs.BLL\\Jobs.BLL.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net6.0": {
+        "targetAlias": "net6.0",
+        "dependencies": {
+          "Microsoft.NET.Test.Sdk": {
+            "target": "Package",
+            "version": "[17.2.0, )"
+          },
+          "Moq": {
+            "target": "Package",
+            "version": "[4.18.1, )"
+          },
+          "coverlet.collector": {
+            "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+            "suppressParent": "All",
+            "target": "Package",
+            "version": "[3.1.2, )"
+          },
+          "xunit": {
+            "target": "Package",
+            "version": "[2.4.1, )"
+          },
+          "xunit.runner.visualstudio": {
+            "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+            "suppressParent": "All",
+            "target": "Package",
+            "version": "[2.4.5, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+      }
+    }
+  },
+  "logs": [
+    {
+      "code": "NU1102",
+      "level": "Error",
+      "message": "Не удалось найти пакет Microsoft.NET.Test.Sdk с версией (>= 17.2.0)\r\n  - В Microsoft Visual Studio Offline Packages обнаружено несколько версий (1) [ Ближайшая версия: 16.11.0 ]",
+      "libraryId": "Microsoft.NET.Test.Sdk",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1102",
+      "level": "Error",
+      "message": "Не удалось найти пакет coverlet.collector с версией (>= 3.1.2)\r\n  - В Microsoft Visual Studio Offline Packages обнаружено несколько версий (1) [ Ближайшая версия: 3.0.3 ]",
+      "libraryId": "coverlet.collector",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1101",
+      "level": "Error",
+      "message": "Не удалось найти пакет xunit. Пакеты с таким идентификатором отсутствуют в следующих источниках пакетов: Microsoft Visual Studio Offline Packages",
+      "libraryId": "xunit",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1101",
+      "level": "Error",
+      "message": "Не удалось найти пакет xunit.runner.visualstudio. Пакеты с таким идентификатором отсутствуют в следующих источниках пакетов: Microsoft Visual Studio Offline Packages",
+      "libraryId": "xunit.runner.visualstudio",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1101",
+      "level": "Error",
+      "message": "Не удалось найти пакет Moq. Пакеты с таким идентификатором отсутствуют в следующих источниках пакетов: Microsoft Visual Studio Offline Packages",
+      "libraryId": "Moq",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1101",
+      "level": "Error",
+      "message": "Не удалось найти пакет Serilog.Sinks.Console. Пакеты с таким идентификатором отсутствуют в следующих источниках пакетов: Microsoft Visual Studio Offline Packages",
+      "libraryId": "Serilog.Sinks.Console",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1101",
+      "level": "Error",
+      "message": "Не удалось найти пакет Serilog.Sinks.File. Пакеты с таким идентификатором отсутствуют в следующих источниках пакетов: Microsoft Visual Studio Offline Packages",
+      "libraryId": "Serilog.Sinks.File",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1101",
+      "level": "Error",
+      "message": "Не удалось найти пакет AutoMapper. Пакеты с таким идентификатором отсутствуют в следующих источниках пакетов: Microsoft Visual Studio Offline Packages",
+      "libraryId": "AutoMapper",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1101",
+      "level": "Error",
+      "message": "Не удалось найти пакет Serilog. Пакеты с таким идентификатором отсутствуют в следующих источниках пакетов: Microsoft Visual Studio Offline Packages",
+      "libraryId": "Serilog",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1101",
+      "level": "Error",
+      "message": "Не удалось найти пакет Microsoft.EntityFrameworkCore. Пакеты с таким идентификатором отсутствуют в следующих источниках пакетов: Microsoft Visual Studio Offline Packages",
+      "libraryId": "Microsoft.EntityFrameworkCore",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1101",
+      "level": "Error",
+      "message": "Не удалось найти пакет Microsoft.EntityFrameworkCore.SqlServer. Пакеты с таким идентификатором отсутствуют в следующих источниках пакетов: Microsoft Visual Studio Offline Packages",
+      "libraryId": "Microsoft.EntityFrameworkCore.SqlServer",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1101",
+      "level": "Error",
+      "message": "Не удалось найти пакет System.Configuration.ConfigurationManager. Пакеты с таким идентификатором отсутствуют в следующих источниках пакетов: Microsoft Visual Studio Offline Packages",
+      "libraryId": "System.Configuration.ConfigurationManager",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1101",
+      "level": "Error",
+      "message": "Не удалось найти пакет Microsoft.Extensions.Configuration. Пакеты с таким идентификатором отсутствуют в следующих источниках пакетов: Microsoft Visual Studio Offline Packages",
+      "libraryId": "Microsoft.Extensions.Configuration",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    }
+  ]
+}

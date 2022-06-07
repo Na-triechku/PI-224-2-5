@@ -1,0 +1,26 @@
+﻿@page
+@model Jobs.WebClient.Pages.Views.Vacancy.FindVacancyByCVModel
+@{
+    <table class="table">
+        <tr>
+            <td>Name</td>
+            <td>Position</td>
+            <td>Required skills</td>
+            <td>Start date</td>
+            <td>Required experience</td>
+            <td>Salary</td>
+        </tr>
+
+        @foreach (var vacancy in Model.Vacancies)
+        {
+            <tr>
+                <td>@vacancy.Name</td>
+                <td>@vacancy.Position</td>
+                <td>@vacancy.RequiredSkills</td>
+                <td>@vacancy.StartDate.ToShortDateString()</td>
+                <td>@vacancy.RequiredExperience @(vacancy.RequiredExperience == 1 ? "year" : "years")</td>
+                <td>@vacancy.Salary</td>
+            </tr>
+        }
+    </table>
+}

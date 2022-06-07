@@ -1,0 +1,100 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Jobs.WebClient
+build_property.RootNamespace = Jobs.WebClient
+build_property.ProjectDir = C:\Users\Dice1\Downloads\Telegram Desktop\Jobs\Jobs.WebClient\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\Dice1\Downloads\Telegram Desktop\Jobs\Jobs.WebClient
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/Dice1/Downloads/Telegram Desktop/Jobs/Jobs.WebClient/Pages/Shared/_MainLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9NYWluTGF5b3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Dice1/Downloads/Telegram Desktop/Jobs/Jobs.WebClient/Pages/Views/CV/AddCV.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmlld3NcQ1ZcQWRkQ1YuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Dice1/Downloads/Telegram Desktop/Jobs/Jobs.WebClient/Pages/Views/CV/CVsList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmlld3NcQ1ZcQ1ZzTGlzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Dice1/Downloads/Telegram Desktop/Jobs/Jobs.WebClient/Pages/Views/CV/DeleteCV.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmlld3NcQ1ZcRGVsZXRlQ1YuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Dice1/Downloads/Telegram Desktop/Jobs/Jobs.WebClient/Pages/Views/CV/FindCVsByVacancy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmlld3NcQ1ZcRmluZENWc0J5VmFjYW5jeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Dice1/Downloads/Telegram Desktop/Jobs/Jobs.WebClient/Pages/Views/CV/VacanciesCVsList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmlld3NcQ1ZcVmFjYW5jaWVzQ1ZzTGlzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Dice1/Downloads/Telegram Desktop/Jobs/Jobs.WebClient/Pages/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Dice1/Downloads/Telegram Desktop/Jobs/Jobs.WebClient/Pages/Views/JobApplication/JobApplication.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmlld3NcSm9iQXBwbGljYXRpb25cSm9iQXBwbGljYXRpb24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Dice1/Downloads/Telegram Desktop/Jobs/Jobs.WebClient/Pages/Views/User/Add/AddAdministrator.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmlld3NcVXNlclxBZGRcQWRkQWRtaW5pc3RyYXRvci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Dice1/Downloads/Telegram Desktop/Jobs/Jobs.WebClient/Pages/Views/User/Add/AddRecruiter.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmlld3NcVXNlclxBZGRcQWRkUmVjcnVpdGVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Dice1/Downloads/Telegram Desktop/Jobs/Jobs.WebClient/Pages/Views/User/Add/AddUser.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmlld3NcVXNlclxBZGRcQWRkVXNlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Dice1/Downloads/Telegram Desktop/Jobs/Jobs.WebClient/Pages/Views/User/Authorization/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmlld3NcVXNlclxBdXRob3JpemF0aW9uXExvZ2luLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Dice1/Downloads/Telegram Desktop/Jobs/Jobs.WebClient/Pages/Views/User/Authorization/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmlld3NcVXNlclxBdXRob3JpemF0aW9uXFJlZ2lzdGVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Dice1/Downloads/Telegram Desktop/Jobs/Jobs.WebClient/Pages/Views/User/Delete/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmlld3NcVXNlclxEZWxldGVcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Dice1/Downloads/Telegram Desktop/Jobs/Jobs.WebClient/Pages/Views/Vacancy/AddVacancy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmlld3NcVmFjYW5jeVxBZGRWYWNhbmN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Dice1/Downloads/Telegram Desktop/Jobs/Jobs.WebClient/Pages/Views/Vacancy/DeleteVacancy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmlld3NcVmFjYW5jeVxEZWxldGVWYWNhbmN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Dice1/Downloads/Telegram Desktop/Jobs/Jobs.WebClient/Pages/Views/Vacancy/EditVacancy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmlld3NcVmFjYW5jeVxFZGl0VmFjYW5jeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Dice1/Downloads/Telegram Desktop/Jobs/Jobs.WebClient/Pages/Views/Vacancy/FindVacancyByCV.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmlld3NcVmFjYW5jeVxGaW5kVmFjYW5jeUJ5Q1YuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Dice1/Downloads/Telegram Desktop/Jobs/Jobs.WebClient/Pages/Views/Vacancy/VacancyInfo.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmlld3NcVmFjYW5jeVxWYWNhbmN5SW5mby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Dice1/Downloads/Telegram Desktop/Jobs/Jobs.WebClient/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Dice1/Downloads/Telegram Desktop/Jobs/Jobs.WebClient/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 

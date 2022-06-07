@@ -1,0 +1,19 @@
+D:\Documents\Visual Studio Projects\Jobs\Jobs.BLL\bin\Debug\net6.0\appsettings.json
+D:\Documents\Visual Studio Projects\Jobs\Jobs.BLL\bin\Debug\net6.0\Jobs.BLL.deps.json
+D:\Documents\Visual Studio Projects\Jobs\Jobs.BLL\bin\Debug\net6.0\Jobs.BLL.dll
+D:\Documents\Visual Studio Projects\Jobs\Jobs.BLL\bin\Debug\net6.0\Jobs.BLL.pdb
+D:\Documents\Visual Studio Projects\Jobs\Jobs.BLL\bin\Debug\net6.0\Jobs.DAL.dll
+D:\Documents\Visual Studio Projects\Jobs\Jobs.BLL\bin\Debug\net6.0\Jobs.DAL.pdb
+D:\Documents\Visual Studio Projects\Jobs\Jobs.BLL\obj\Debug\net6.0\Jobs.BLL.csproj.AssemblyReference.cache
+D:\Documents\Visual Studio Projects\Jobs\Jobs.BLL\obj\Debug\net6.0\Jobs.BLL.GeneratedMSBuildEditorConfig.editorconfig
+D:\Documents\Visual Studio Projects\Jobs\Jobs.BLL\obj\Debug\net6.0\Jobs.BLL.AssemblyInfoInputs.cache
+D:\Documents\Visual Studio Projects\Jobs\Jobs.BLL\obj\Debug\net6.0\Jobs.BLL.AssemblyInfo.cs
+D:\Documents\Visual Studio Projects\Jobs\Jobs.BLL\obj\Debug\net6.0\Jobs.BLL.csproj.CoreCompileInputs.cache
+D:\Documents\Visual Studio Projects\Jobs\Jobs.BLL\obj\Debug\net6.0\Jobs.BLL.csproj.CopyComplete
+D:\Documents\Visual Studio Projects\Jobs\Jobs.BLL\obj\Debug\net6.0\Jobs.BLL.dll
+D:\Documents\Visual Studio Projects\Jobs\Jobs.BLL\obj\Debug\net6.0\refint\Jobs.BLL.dll
+D:\Documents\Visual Studio Projects\Jobs\Jobs.BLL\obj\Debug\net6.0\Jobs.BLL.pdb
+D:\Documents\Visual Studio Projects\Jobs\Jobs.BLL\obj\Debug\net6.0\ref\Jobs.BLL.dll
+C:\Users\Dice1\Downloads\Telegram Desktop\Jobs\Jobs.BLL\obj\Debug\net6.0\Jobs.BLL.dll
+C:\Users\Dice1\Downloads\Telegram Desktop\Jobs\Jobs.BLL\obj\Debug\net6.0\refint\Jobs.BLL.dll
+C:\Users\Dice1\Downloads\Telegram Desktop\Jobs\Jobs.BLL\obj\Debug\net6.0\Jobs.BLL.pdb

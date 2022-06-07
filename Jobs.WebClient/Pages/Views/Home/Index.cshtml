@@ -1,0 +1,151 @@
+﻿@page "{handler?}"
+@inject IUserManagerService UserManager
+@using Jobs.WebClient.Interfaces
+
+@model Jobs.WebClient.Pages.Views.Home.IndexModel
+
+@{
+    @if (UserManager.LoggedUser != null)
+    {
+        <nav class="navbar navbar-expand-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <div class="container">
+            <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
+                <ul class="navbar-nav flex-grow-1">
+                    <li class="nav-item">
+                        <form method="post">
+                            <label>Search by name</label>
+                            <input type="text" name="search"/>
+                            <input class="btn btn-dark" type="submit" asp-page-handler="SearchName" value="Search"/>
+                        </form>
+                    </li>
+                    <li class="nav-item">
+                        <form method="post">
+                            <label>Search by position</label>
+                            <input type="text" name="search"/>
+                            <input class="btn btn-dark" type="submit" asp-page-handler="SearchPosition" value="Search"/>
+                        </form>
+                    </li>
+                    <li class="nav-item">
+                        <form method="post">
+                            <label>Search by salary</label>
+                            <input type="text" name="search"/>
+                            <input class="btn btn-dark" type="submit" asp-page-handler="SearchSalary" value="Search"/>
+                        </form>
+                    </li>
+                    <li class="nav-item">
+                        <form method="post">
+                            <label>Search by experience</label>
+                            <input type="number" name="search"/>
+                            <input class="btn btn-dark" type="submit" asp-page-handler="SearchExperience" value="Search"/>
+                        </form>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <nav class="navbar navbar-expand-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <div class="container">
+            <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
+                <ul class="navbar-nav flex-grow-1">
+                    <li class="nav-item">
+                        <a class="btn btn-dark border-dark mx-1" role="button" asp-page="/Views/Home/Index" asp-route-sort="position">Sort by position</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-dark border-dark mx-1" role="button" asp-page="/Views/Home/Index" asp-route-sort="requiredExperience">Sort by required experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-dark border-dark mx-1" role="button" asp-page="/Views/Home/Index" asp-route-sort="date">Sort by date</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-dark border-dark mx-1" role="button" asp-page="/Views/Home/Index" asp-route-sort="salary">Sort by salary</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <nav class="navbar navbar-expand-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <div class="container">
+            <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
+                <ul class="navbar-nav flex-grow-1">
+                    <li class="nav-item">
+                        <a class="btn btn-dark border-dark mx-1" role="button" asp-page="/Views/Home/Index" asp-route-sort="positionDescending">Sort by position</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-dark border-dark mx-1" role="button" asp-page="/Views/Home/Index" asp-route-sort="requiredExperienceDescending">Sort by required experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-dark border-dark mx-1" role="button" asp-page="/Views/Home/Index" asp-route-sort="dateDescending">Sort by date descending</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-dark border-dark mx-1" role="button" asp-page="/Views/Home/Index" asp-route-sort="salaryDescending">Sort by salary descending</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <table class="table">
+        <tr>
+            <td>Name</td>
+            <td>Position</td>
+            <td>Required skills</td>
+            <td>Start date</td>
+            <td>Required experience</td>
+            <td>Salary</td>
+            @if (UserManager.LoggedUser != null)
+            {
+                @if (UserManager.LoggedUser.IsLogged && UserManager.LoggedUser.Role == "Recruiter")
+                {
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                }
+            }
+            @if (UserManager.LoggedUser != null)
+            {
+                @if (UserManager.LoggedUser.IsLogged && UserManager.LoggedUser.Role == "User")
+                {
+                    <td></td>
+                }
+            }
+        </tr>
+
+        @foreach (var vacancy in Model.Vacancies)
+        {
+            <tr>
+                <td>@vacancy.Name</td>
+                <td>@vacancy.Position</td>
+                <td>@vacancy.RequiredSkills</td>
+                <td>@vacancy.StartDate.ToShortDateString()</td>
+                <td>@vacancy.RequiredExperience @(vacancy.RequiredExperience == 1 ? "year" : "years")</td>
+                <td>@vacancy.Salary</td>
+                
+                @if (UserManager.LoggedUser != null)
+                {
+                    @if (UserManager.LoggedUser.IsLogged && UserManager.LoggedUser.Role == "User")
+                    {
+                        <td>
+                            <a class="btn btn-dark" role="button" asp-page="/Views/Vacancy/VacancyInfo" asp-route-id="@vacancy.Id">Information</a>
+                        </td>
+                    }
+                }
+                @if (UserManager.LoggedUser != null)
+                {
+                    @if (UserManager.LoggedUser.IsLogged && UserManager.LoggedUser.Role == "Recruiter")
+                    {
+                        <td>
+                            <a class="btn btn-dark" role="button" asp-page="/Views/Vacancy/EditVacancy" asp-route-id="@vacancy.Id">Edit</a>
+                        </td>
+                        <td>
+                            <a class="btn btn-dark" role="button" asp-page="/Views/Vacancy/DeleteVacancy" asp-route-id="@vacancy.Id">Delete</a>
+                        </td>
+                        <td>
+                            <a class="btn btn-dark" role="button" asp-page="/Views/CV/FindCVsByVacancy" asp-route-vacancyId="@vacancy.Id">Find CVs</a>
+                        </td>
+                    }
+                }
+            </tr>
+        }
+    </table>
+    }
+}

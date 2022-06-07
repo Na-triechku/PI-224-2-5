@@ -1,0 +1,34 @@
+﻿@page
+@inject IUserManagerService UserManagerService
+@using Jobs.WebClient.Interfaces
+@model Jobs.WebClient.Pages.Views.Vacancy.VacancyInfoModel
+
+@{
+    <div>
+        <label>Vacancy name: @Model.VacancyViewModel.Name</label><br/>
+    </div>
+    <div>
+        <label>Vacancy position: @Model.VacancyViewModel.Position</label><br/>
+    </div>
+    <div>
+        <label>Vacancy required experience: @Model.VacancyViewModel.RequiredExperience</label><br/>
+    </div>
+    <div>
+        <label>Vacancy required skills: @Model.VacancyViewModel.RequiredSkills</label><br/>
+    </div>
+    <div>
+        <label>Vacancy start date: @Model.VacancyViewModel.StartDate.ToShortDateString()</label><br/>
+    </div>
+    <div>
+        <label>Vacancy salary: @Model.VacancyViewModel.Salary</label><br/>
+    </div>
+    @if (UserManagerService.LoggedUser != null)
+    {
+        @if (UserManagerService.LoggedUser.Role == "User")
+        {
+            <td>
+                <a class="btn btn-dark" role="button" asp-page="/Views/JobApplication/JobApplication" asp-route-vacancyId="@Model.VacancyViewModel.Id">Send CV</a>
+            </td>
+        }
+    }
+}

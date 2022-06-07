@@ -1,0 +1,37 @@
+﻿@page "{handler?}"
+@inject IUserManagerService UserManager
+@using Jobs.WebClient.Interfaces
+@model Jobs.WebClient.Pages.Views.User.Delete.DeleteModel
+@{
+    <table class="table">
+        <tr>
+            <td>Id</td>
+            <td>Email</td>
+            <td>Role</td>
+            <td>IsLogged</td>
+            <td></td>
+            @if (UserManager.LoggedUser != null)
+            {
+                @if (UserManager.LoggedUser.IsLogged && UserManager.LoggedUser.Role == "User")
+                {
+                    <td></td>
+                }
+            }
+        </tr>
+
+        @foreach (var user in Model.Users)
+        {
+            <tr>
+                <td>@user.Id</td>
+                <td>@user.Email</td>
+                <td>@user.Role</td>
+                <td>@user.IsLogged</td>
+                <td>
+                    <form method="post">
+                        <input class="btn btn-dark" type="submit" asp-route-id="@user.Id" asp-page-handler="Delete" value="Delete"/>
+                    </form>
+                </td>
+            </tr>
+        }
+    </table>
+}

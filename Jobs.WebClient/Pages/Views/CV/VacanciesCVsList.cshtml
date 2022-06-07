@@ -1,0 +1,27 @@
+﻿@page
+@model Jobs.WebClient.Pages.Views.CV.VacanciesCVsListModel
+@{
+    <table class="table">
+        <tr>
+            <td>CV Name</td>
+            <td>CV Position</td>
+            <td>CV Skills</td>
+            <td>CV Experience</td>
+            <td>CV Expected Salary</td>
+            <td></td>
+        </tr>
+        @foreach (var cv in Model.CVs)
+        {
+            <tr>
+                <td>@cv.Name</td>
+                <td>@cv.Position</td>
+                <td>@cv.Skills</td>
+                <td>@cv.Experience</td>
+                <td>@cv.ExpectedSalary</td>
+                <td>
+                    <a class="btn btn-dark" role="button" asp-page="/Views/Vacancy/FindVacancyByCV" asp-route-vacancyId="@cv.Id">Find vacancies</a>
+                </td>
+            </tr>
+        }
+    </table>
+}
